@@ -1,0 +1,16 @@
+.icon {
+	width: 2em;
+	height: 2em;
+	color: currentColor;
+	transition: 0.2s all ease-in-out;
+}
+
+.button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		color: yellow;
+	}
+}
