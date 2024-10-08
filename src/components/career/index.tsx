@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 const Career = () => {
 	return (
 		<section className='section flow' aria-label='Career'>
-			<h2>Career</h2>
+			<h2>Work</h2>
 			<p>
 				Praesent commodo cursus magna, vel scelerisque nisl consectetur
 				et. Donec ullamcorper nulla non metus auctor fringilla. Cras

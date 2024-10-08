@@ -1,14 +1,12 @@
 import styles from "./index.module.css";
-import me from "@images/me.jpg";
-import ColorModeToggle from "../color-mode-toggle";
-import cloverLogo from "@assets/";
+import me from "../../../src/assets/images/me.jpg";
 
 const AppHeader = () => {
 	return (
 		<header className={`${styles.header} flow`}>
 			<div className={styles.headerContainer}>
 				<img className={styles.avatar} src={me} alt='' />
-				<ColorModeToggle />
+				Toggle
 			</div>
 			<h1 className={styles.name}>Brian Maier Jr.</h1>
 			<h2 className={styles.title}>

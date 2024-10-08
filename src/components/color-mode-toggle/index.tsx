@@ -1,10 +1,21 @@
-import { SunIcon } from "@heroicons/react/24/outline";
-import styles from "./index.module.css";
+interface ToggleProps {
+	handleChange: any;
+	isChecked: boolean;
+}
 
-const ColorModeToggle = () => {
-	return <button className={styles.button}>
-        <SunIcon className={styles.icon} />
-    </button>;
+const ColorModeToggle = ({ handleChange, isChecked }: ToggleProps) => {
+	return (
+		<div className='toggle-container'>
+			<input
+				type='checkbox'
+				id='check'
+				className='toggle'
+				onChange={handleChange}
+				checked={isChecked}
+			/>
+			<label htmlFor='check'>Dark Mode</label>
+		</div>
+	);
 };
 
 export default ColorModeToggle;

@@ -1,7 +1,5 @@
-.header {
-	img {
-		border-radius: 50%;
-	}
+.avatar {
+	border-radius: 50%;
 }
 
 .headerContainer {
@@ -13,18 +11,19 @@
 
 .name {
 	font-size: 1.2em;
+	color: var(--text-color);
 }
 
 .title {
 	--flow-space: 0.2em;
 	font-size: 1.1em;
 	font-weight: 500;
-	color: rgba(255, 255, 255, 0.3);
-
+	color: var(--text-color-shadier);
+	font-family: var(--font-sans);
 	a {
 		transition: 0.2s all ease-in-out;
 		&:hover {
-			color: rgba(255, 255, 255, 0.5);
+			color: var(--text-color-shade);
 		}
 	}
 }

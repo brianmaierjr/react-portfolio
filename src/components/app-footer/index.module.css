@@ -11,13 +11,14 @@
 		display: flex;
 		padding: 0;
 		list-style: none;
-		gap: 0.5em;
+		gap: 1em;
 	}
 
 	a {
 		transition: 0.2s all ease-in-out;
+		color: var(--text-color-shadier);
 		&:hover {
-			color: rgba(255, 255, 255, 2);
+			color: var(--text-color);
 		}
 	}
 }
