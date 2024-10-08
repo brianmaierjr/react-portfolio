@@ -1,5 +1,3 @@
-import styles from "./index.module.css";
-
 const Career = () => {
 	return (
 		<section className='section flow' aria-label='Career'>

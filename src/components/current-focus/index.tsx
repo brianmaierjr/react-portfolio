@@ -1,5 +1,3 @@
-import styles from "./index.module.css";
-
 const CurrentFocus = () => {
 	return (
 		<section className='section flow' aria-label='Current Focus'>
