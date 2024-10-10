@@ -20,7 +20,7 @@ const DarkMode = () => {
 		setDarkMode();
 	}
 
-	const toggleTheme = (e) => {
+	const toggleTheme = (e: any) => {
 		if (e.target.checked) setDarkMode();
 		else setLightMode();
 	};
