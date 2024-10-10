@@ -41,7 +41,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	.dark {
+	[data-theme="dark"] {
 		--bg-color: var(--black);
 		--bg-color-shade: var(--black-75);
 		--bg-color-shadier: var(--black-50);
