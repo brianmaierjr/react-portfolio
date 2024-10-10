@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./color-mode-toggle.css";
 
 const DarkMode = () => {
