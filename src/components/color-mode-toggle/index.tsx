@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./color-mode-toggle.css";
 
 const DarkMode = () => {
@@ -18,6 +19,8 @@ const DarkMode = () => {
 		window.matchMedia("(prefers-color-scheme: dark)")
 	) {
 		setDarkMode();
+	} else {
+		setLightMode();
 	}
 
 	const toggleTheme = (e: any) => {
@@ -32,7 +35,7 @@ const DarkMode = () => {
 				type='checkbox'
 				id='darkmode-toggle'
 				onChange={toggleTheme}
-				checked={selectedTheme === "dark"}
+				defaultChecked={selectedTheme === "dark"}
 			/>
 			<label
 				className='dark_mode_label'
