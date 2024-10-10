@@ -4,6 +4,7 @@
 	--black-50: rgba(0, 0, 0, 0.5);
 	--black-30: rgba(0, 0, 0, 0.3);
 	--black-10: rgba(0, 0, 0, 0.1);
+	--black-5: rgba(0, 0, 0, 0.05);
 	--white: #ffffff;
 	--white-75: rgba(255, 255, 255, 0.75);
 	--white-50: rgba(255, 255, 255, 0.5);
@@ -19,7 +20,7 @@
 	--text-color-shade: var(--black-75);
 	--text-color-shadier: var(--black-50);
 	--text-color-shadiest: var(--black-30);
-	--text-color-slim-shady: var(--black-10);
+	--text-color-slim-shady: var(--black-5);
 
 	--font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
 		Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
@@ -39,25 +40,24 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	.dark {
+		--bg-color: var(--black);
+		--bg-color-shade: var(--black-75);
+		--bg-color-shadier: var(--black-50);
+		--bg-color-shadiest: var(--black-30);
+		--bg-color-slim-shady: var(--black-10);
+		--text-color: var(--white-75);
+		--text-color-shade: var(--white-75);
+		--text-color-shadier: var(--white-50);
+		--text-color-shadiest: var(--white-30);
+		--text-color-slim-shady: var(--white-10);
+	}
 }
 
 .app {
 	color: var(--text-color);
-	background-color: var(--bg-color);
 	padding-block: 4em;
-}
-
-[data-theme="dark"] {
-	--bg-color: var(--black);
-	--bg-color-shade: var(--black-75);
-	--bg-color-shadier: var(--black-50);
-	--bg-color-shadiest: var(--black-30);
-	--bg-color-slim-shady: var(--black-10);
-	--text-color: var(--white-75);
-	--text-color-shade: var(--white-75);
-	--text-color-shadier: var(--white-50);
-	--text-color-shadiest: var(--white-30);
-	--text-color-slim-shady: var(--white-10);
 }
 
 a {
@@ -66,6 +66,7 @@ a {
 }
 
 body {
+	background-color: var(--bg-color);
 	margin: 0;
 	place-items: center;
 	min-height: 100vh;

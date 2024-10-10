@@ -1,19 +1,16 @@
-interface ToggleProps {
-	handleChange: any;
-	isChecked: boolean;
-}
+import { useEffect } from "react";
+import useThemeStore from "../../store/themeStore";
 
-const ColorModeToggle = ({ handleChange, isChecked }: ToggleProps) => {
+const ColorModeToggle = () => {
+	const { isDarkMode, toggleTheme } = useThemeStore();
+
+	useEffect(() => {
+		document.body.classList.toggle("dark", isDarkMode);
+	}, [isDarkMode]);
+
 	return (
 		<div className='toggle-container'>
-			<input
-				type='checkbox'
-				id='check'
-				className='toggle'
-				onChange={handleChange}
-				checked={isChecked}
-			/>
-			<label htmlFor='check'>Dark Mode</label>
+			<button onClick={toggleTheme}>Toggle Theme</button>
 		</div>
 	);
 };
