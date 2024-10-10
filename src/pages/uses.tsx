@@ -1,9 +1,5 @@
 import AppFooter from "../components/app-footer";
 import AppHeader from "../components/app-header";
-import Career from "../components/career";
-import CurrentFocus from "../components/current-focus";
-import Project from "../components/projects/project";
-import Projects from "../components/projects/projects";
 
 const Uses = () => {
 	return (
