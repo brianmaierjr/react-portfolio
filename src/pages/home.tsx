@@ -2,6 +2,8 @@ import AppFooter from "../components/app-footer";
 import AppHeader from "../components/app-header";
 import Project from "../components/projects/project";
 import Section from "../components/section";
+import { ArrowUpRight } from "react-feather";
+
 const Home = () => {
 	return (
 		<div className='container'>
@@ -11,8 +13,11 @@ const Home = () => {
 					<h2>Work</h2>
 					<p>
 						I currently work for{" "}
-						<a href='https://cloverlearning.com' target='_blank'>
-							Clover Learning
+						<a
+							className='externalLink'
+							href='https://cloverlearning.com'
+							target='_blank'>
+							Clover Learning <ArrowUpRight />
 						</a>{" "}
 						as a Design Engineer. I work daily with React and Vue to
 						create components and a design system that lets me and

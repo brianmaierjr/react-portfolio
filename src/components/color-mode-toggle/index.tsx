@@ -1,32 +1,15 @@
+import { useEffect } from "react";
+import useThemeStore from "../../store/themeStore";
 import "./color-mode-toggle.css";
 import { Sun, Moon } from "react-feather";
 
 const DarkMode = () => {
-	const setDarkMode = () => {
-		document.querySelector("body")?.setAttribute("data-theme", "dark");
-		localStorage.setItem("selectedTheme", "dark");
-	};
+	const { isDarkMode, toggleTheme } = useThemeStore();
 
-	const setLightMode = () => {
-		document.querySelector("body")?.setAttribute("data-theme", "light");
-		localStorage.setItem("selectedTheme", "light");
-	};
-
-	const selectedTheme = localStorage.getItem("selectedTheme");
-
-	if (
-		selectedTheme === "dark" ||
-		window.matchMedia("(prefers-color-scheme: dark)")
-	) {
-		setDarkMode();
-	} else {
-		setLightMode();
-	}
-
-	const toggleTheme = (e: any) => {
-		if (e.target.checked) setDarkMode();
-		else setLightMode();
-	};
+	useEffect(() => {
+		console.log("use effect");
+		document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
+	}, [isDarkMode, toggleTheme]);
 
 	return (
 		<div className='dark_mode'>
@@ -35,10 +18,10 @@ const DarkMode = () => {
 				type='checkbox'
 				id='darkmode-toggle'
 				onChange={toggleTheme}
-				defaultChecked={selectedTheme === "dark"}
+				defaultChecked={isDarkMode}
 			/>
 			<label className='dark_mode_label' htmlFor='darkmode-toggle'>
-				{selectedTheme === "light" ? <Sun /> : <Moon />}
+				{isDarkMode ? <Sun /> : <Moon />}
 			</label>
 		</div>
 	);

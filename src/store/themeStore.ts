@@ -6,7 +6,7 @@ interface ThemeState {
 }
 
 const useThemeStore = create<ThemeState>((set) => ({
-	isDarkMode: false,
+	isDarkMode: matchMedia("(prefers-color-scheme: dark)").matches,
 	toggleTheme: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
 }));
 

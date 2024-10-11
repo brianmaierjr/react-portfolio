@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "react-feather";
 import AppFooter from "../components/app-footer";
 import AppHeader from "../components/app-header";
 import Section from "../components/section";
@@ -5,18 +6,26 @@ import Section from "../components/section";
 const Uses = () => {
 	return (
 		<div className='container flow'>
-			<AppHeader hideIntro />
+			<AppHeader />
 			<main>
 				<Section label='Uses'>
 					<h2>Uses</h2>
 					<p>
 						Items I use on a daily basis. Inspired by{" "}
-						<a href='https://uses.tech' target='_blank'>
+						<a
+							className='externalLink'
+							href='https://uses.tech'
+							target='_blank'>
 							uses.tech
+							<ArrowUpRight />
 						</a>{" "}
 						and{" "}
-						<a href='https://wesbos.com/uses' target='_blank'>
+						<a
+							className='externalLink'
+							href='https://wesbos.com/uses'
+							target='_blank'>
 							Wes Bos
+							<ArrowUpRight />
 						</a>
 						.
 					</p>

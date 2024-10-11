@@ -21,6 +21,7 @@
 	--text-color-shadier: var(--black-50);
 	--text-color-shadiest: var(--black-30);
 	--text-color-slim-shady: var(--black-5);
+	--link-color: limegreen;
 
 	--font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
 		Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
@@ -52,6 +53,7 @@
 		--text-color-shadier: var(--white-50);
 		--text-color-shadiest: var(--white-30);
 		--text-color-slim-shady: var(--white-10);
+		--link-color: greenyellow;
 	}
 }
 
@@ -68,8 +70,7 @@ a {
 	text-decoration-color: var(--text-color-shadier);
 
 	&:hover {
-		text-decoration-style: solid;
-		text-decoration-color: var(--text-color);
+		text-decoration-color: var(--link-color);
 	}
 }
 
@@ -132,5 +133,20 @@ h6 {
 		@media (min-width: 37rem) {
 			grid-template-columns: 1fr 1fr;
 		}
+	}
+}
+
+.externalLink {
+	display: inline-flex;
+	align-items: center;
+
+	svg {
+		height: 1em;
+		width: 1em;
+		color: var(--text-color-shadiest);
+	}
+
+	&:hover svg {
+		color: var(--link-color);
 	}
 }
