@@ -3,7 +3,6 @@ import AppHeader from "../components/app-header";
 import Project from "../components/projects/project";
 import Section from "../components/section";
 import { ArrowUpRight } from "react-feather";
-import Stack from "../components/stack";
 
 const Home = () => {
 	return (
