@@ -1,20 +1,64 @@
 import AppFooter from "../components/app-footer";
 import AppHeader from "../components/app-header";
+import Section from "../components/section";
 
 const Uses = () => {
 	return (
 		<div className='container flow'>
 			<AppHeader hideIntro />
 			<main>
-				<div className='flow section'>
-					<h1>Uses</h1>
+				<Section label='Uses'>
+					<h2>Uses</h2>
 					<p>
-						Nullam id dolor id nibh ultricies vehicula ut id elit.
-						Nulla vitae elit libero, a pharetra augue. Nullam quis
-						risus eget urna mollis ornare vel eu leo. Curabitur
-						blandit tempus porttitor.
+						Items I use on a daily basis. Inspired by{" "}
+						<a href='https://uses.tech' target='_blank'>
+							uses.tech
+						</a>{" "}
+						and{" "}
+						<a href='https://wesbos.com/uses' target='_blank'>
+							Wes Bos
+						</a>
+						.
 					</p>
-				</div>
+				</Section>
+				<Section label='Hardware'>
+					<h2>Hardware</h2>
+					<ul className='list twoCol'>
+						<li>Apple 16" Macbook Pro M1</li>
+						<li>LG 32" 4k Montior</li>
+						<li>LG 27" Ultra HD Montior - Vertical</li>
+						<li>MINDSKSTP Felt Desk Pad</li>
+						<li>MINDSKSTP Montior LIght Bar</li>
+						<li>Creative Pebble Pro Speakers</li>
+						<li>Logitech MX Master Mouse</li>
+						<li>Apple Magic Keyboard w/Touch ID</li>
+						<li>Apple Air Pods Pro</li>
+						<li>Apple Watch SE</li>
+						<li>Apple iPhone 13</li>
+					</ul>
+				</Section>
+				<Section label='Software'>
+					<h2>Software</h2>
+					<ul className='list twoCol'>
+						<li>Figma</li>
+						<li>Adobe Illustrator</li>
+						<li>Adobe Photoshop</li>
+						<li>VS Code</li>
+						<li>JetBrains Mono Font in VS Code</li>
+						<li>Oh My Zsh</li>
+						<li>iTerm</li>
+						<li>Chrome Browser</li>
+						<li>Last Pass</li>
+						<li>Dropmark</li>
+						<li>Loom</li>
+						<li>Pocket</li>
+						<li>Slack</li>
+						<li>Feedly</li>
+						<li>Dropbox</li>
+						<li>GitHub</li>
+						<li>Spotify</li>
+					</ul>
+				</Section>
 			</main>
 			<AppFooter />
 		</div>

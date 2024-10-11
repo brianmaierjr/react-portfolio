@@ -2,7 +2,6 @@ import AppFooter from "../components/app-footer";
 import AppHeader from "../components/app-header";
 import Project from "../components/projects/project";
 import Section from "../components/section";
-import styles from "./home.module.css";
 const Home = () => {
 	return (
 		<div className='container'>
@@ -23,7 +22,7 @@ const Home = () => {
 				</Section>
 				<Section label='Now'>
 					<h2>Now</h2>
-					<ul className={styles.list}>
+					<ul className='list'>
 						<li>Transitioning from Vue(Nuxt) to React</li>
 						<li>Building out the Clover Learning Design System</li>
 						<li>Converting Long Haul Jekyll Theme to Astro</li>
