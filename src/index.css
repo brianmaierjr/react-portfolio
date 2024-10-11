@@ -72,6 +72,15 @@ a {
 	&:hover {
 		text-decoration-color: var(--link-color);
 	}
+
+	&.active {
+		text-decoration-style: solid;
+		text-decoration-color: var(--text-color);
+
+		&:hover {
+			text-decoration-color: var(--link-color);
+		}
+	}
 }
 
 body {

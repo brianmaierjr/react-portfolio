@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import useThemeStore from "../../store/themeStore";
+import { useThemeStore } from "../../store/themeStore";
 import "./color-mode-toggle.css";
 import { Sun, Moon } from "react-feather";
 
@@ -7,7 +7,6 @@ const DarkMode = () => {
 	const { isDarkMode, toggleTheme } = useThemeStore();
 
 	useEffect(() => {
-		console.log("use effect");
 		document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
 	}, [isDarkMode, toggleTheme]);
 

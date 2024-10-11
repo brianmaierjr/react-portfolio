@@ -10,6 +10,11 @@
 	&:hover {
 		background-color: var(--text-color-slim-shady);
 		box-shadow: 0 0 0 0.75em var(--text-color-slim-shady);
+
+		h3,
+		.icon {
+			color: var(--link-color);
+		}
 	}
 }
 

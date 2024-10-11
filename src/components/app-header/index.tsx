@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import me from "../../../src/assets/images/me.jpg";
 import ColorModeToggle from "../color-mode-toggle";
+import { NavLink } from "react-router-dom";
 
 interface HeaderProps {
 	hideIntro?: boolean;
@@ -15,10 +16,10 @@ const AppHeader = ({ hideIntro }: HeaderProps) => {
 					<nav>
 						<ul>
 							<li>
-								<a href='/'>Home</a>
+								<NavLink to='/'>Home</NavLink>
 							</li>
 							<li>
-								<a href='/uses'>Uses</a>
+								<NavLink to='/uses'>Uses</NavLink>
 							</li>
 						</ul>
 					</nav>
@@ -29,10 +30,10 @@ const AppHeader = ({ hideIntro }: HeaderProps) => {
 			<h2 className={styles.title}>Design Engineer</h2>
 			{!hideIntro && (
 				<p className={styles.intro}>
-					I'm a Design Engineer in Louisville, Kentucky that believes
-					in empowering users through simple experiences. I work with
-					multiple frameworks on design systems and patterns that help
-					developers and marketers build great sites and products.
+					I'm a Design Engineer that believes in empowering users
+					through simple experiences. I work with multiple frameworks
+					on design systems and patterns that help developers and
+					marketers build great sites and products.
 				</p>
 			)}
 		</header>

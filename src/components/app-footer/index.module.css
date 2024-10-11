@@ -18,7 +18,7 @@
 		transition: 0.2s all ease-in-out;
 		color: var(--text-color-shadier);
 		&:hover {
-			color: var(--text-color);
+			color: var(--link-color);
 		}
 	}
 }
