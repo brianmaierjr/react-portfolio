@@ -1,7 +1,6 @@
 import AppFooter from "../components/app-footer";
 import AppHeader from "../components/app-header";
 import Project from "../components/projects/project";
-import Projects from "../components/projects/projects";
 import Section from "../components/section";
 import styles from "./home.module.css";
 const Home = () => {
