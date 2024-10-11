@@ -5,6 +5,7 @@
 	transition: 0.2s all ease-in-out;
 	gap: 2em;
 	border-radius: 0.05em;
+	text-decoration: none;
 
 	&:hover {
 		background-color: var(--text-color-slim-shady);

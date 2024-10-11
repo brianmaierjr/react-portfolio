@@ -1,4 +1,5 @@
 import "./color-mode-toggle.css";
+import { Sun, Moon } from "react-feather";
 
 const DarkMode = () => {
 	const setDarkMode = () => {
@@ -36,9 +37,9 @@ const DarkMode = () => {
 				onChange={toggleTheme}
 				defaultChecked={selectedTheme === "dark"}
 			/>
-			<label
-				className='dark_mode_label'
-				htmlFor='darkmode-toggle'></label>
+			<label className='dark_mode_label' htmlFor='darkmode-toggle'>
+				{selectedTheme === "light" ? <Sun /> : <Moon />}
+			</label>
 		</div>
 	);
 };

@@ -15,17 +15,17 @@ const Home = () => {
 				<Projects>
 					<Project
 						name='147 Colors'
-						description='Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.'
+						description='Astro site created to showcase all of the CSS color names that are available.'
 						href='https://147colors.com'
 					/>
 					<Project
 						name='Arbitrary Awards'
-						description='Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.'
+						description='One page website that pokes fun at the atrocity that are award websites.'
 						href='https://arbitraryawards.com'
 					/>
 					<Project
 						name='Long Haul Theme'
-						description='Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.'
+						description='Minimal, type-focused, blogging theme built for Jekyll. Astro version coming soon.'
 						href='https://brianmaierjr.com/long-haul'
 					/>
 				</Projects>

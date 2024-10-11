@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ChevronRight } from "react-feather";
 import styles from "./index.module.css";
 
 interface ProjectProps {
@@ -15,7 +15,7 @@ const Project = ({ name, description, href }: ProjectProps) => {
 				<p>{description}</p>
 			</div>
 			<div className={styles.projectIcon}>
-				<ChevronRightIcon className={styles.icon} />
+				<ChevronRight className={styles.icon} />
 			</div>
 		</a>
 	);

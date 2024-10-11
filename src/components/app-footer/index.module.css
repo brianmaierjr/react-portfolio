@@ -22,3 +22,11 @@
 		}
 	}
 }
+
+.icon {
+	color: currentColor;
+}
+
+.praiseGod {
+	color: var(--text-color-shadier);
+}

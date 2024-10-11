@@ -1,15 +1,20 @@
+import styles from "./index.module.css";
+
 const Career = () => {
 	return (
 		<section className='section flow' aria-label='Career'>
 			<h2>Work</h2>
 			<p>
-				Praesent commodo cursus magna, vel scelerisque nisl consectetur
-				et. Donec ullamcorper nulla non metus auctor fringilla. Cras
-				mattis consectetur purus sit amet fermentum. Lorem ipsum dolor
-				sit amet, consectetur adipiscing elit. Maecenas sed diam eget
-				risus varius blandit sit amet non magna. Cum sociis natoque
-				penatibus et magnis dis parturient montes, nascetur ridiculus
-				mus. Maecenas faucibus mollis interdum.
+				I currently work for{" "}
+				<a
+					className={styles.link}
+					href='https://cloverlearning.com'
+					target='_blank'>
+					Clover Learning
+				</a>{" "}
+				as a Design Engineer. I work daily with React and Vue to create
+				components and a design system that lets me and the other
+				engineers build our app, marketing sites, and future mobile app.
 			</p>
 		</section>
 	);

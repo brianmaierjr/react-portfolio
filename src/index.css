@@ -61,8 +61,16 @@
 }
 
 a {
-	text-decoration: inherit;
 	color: currentColor;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	text-decoration-style: dotted;
+	text-decoration-color: var(--text-color-shadier);
+
+	&:hover {
+		text-decoration-style: solid;
+		text-decoration-color: var(--text-color);
+	}
 }
 
 body {
@@ -80,6 +88,8 @@ h5,
 h6 {
 	margin: 0;
 	font-family: var(--font-serif);
+	font-weight: 400;
+	font-style: italic;
 	color: var(--text-color-shadier);
 }
 
@@ -96,4 +106,16 @@ h6 {
 	margin-top: 2rem;
 	padding-top: 2rem;
 	border-top: 0.5px solid var(--text-color-slim-shady);
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
