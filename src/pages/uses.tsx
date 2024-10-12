@@ -6,7 +6,7 @@ import Section from "../components/section";
 const Uses = () => {
 	return (
 		<div className='container flow'>
-			<AppHeader />
+			<AppHeader hideIntro />
 			<main>
 				<Section label='Uses'>
 					<h2>Uses</h2>
