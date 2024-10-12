@@ -4,12 +4,16 @@
 	align-items: center;
 	transition: 0.2s all ease-in-out;
 	gap: 2em;
-	border-radius: 0.05em;
+	border-radius: 0.03em;
 	text-decoration: none;
+
+	@media (min-width: 600px) {
+		border-radius: 0.05em;
+	}
 
 	&:hover {
 		background-color: var(--text-color-slim-shady);
-		box-shadow: 0 0 0 0.75em var(--text-color-slim-shady);
+		box-shadow: 0 0 0 0.5em var(--text-color-slim-shady);
 
 		h3,
 		.icon {
@@ -18,7 +22,7 @@
 	}
 }
 
-.projectList {
+.projectContainer {
 	--flow-space: 2em;
 	display: flex;
 	flex-direction: column;
