@@ -11,7 +11,13 @@ const AppHeader = ({ hideIntro }: HeaderProps) => {
 	return (
 		<header className={`${styles.header} flow`}>
 			<div className={styles.headerContainer}>
-				<img className={styles.avatar} src={me} alt='' />
+				<img
+					className={styles.avatar}
+					src={me}
+					alt=''
+					height='120'
+					width='120'
+				/>
 				<div className={styles.navContainer}>
 					<nav>
 						<ul>
