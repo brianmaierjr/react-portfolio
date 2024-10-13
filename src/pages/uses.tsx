@@ -28,7 +28,7 @@ const Uses = () => {
 				</p>
 			</Section>
 			<Section label='Hardware'>
-				<h2>Hardware</h2>
+				<h3>Hardware</h3>
 				<ul className='list twoCol'>
 					<li>Apple 16" Macbook Pro M1</li>
 					<li>LG 32" 4k Montior</li>
@@ -44,7 +44,7 @@ const Uses = () => {
 				</ul>
 			</Section>
 			<Section label='Software'>
-				<h2>Software</h2>
+				<h3>Software</h3>
 				<ul className='list twoCol'>
 					<li>Figma</li>
 					<li>Adobe Illustrator</li>
