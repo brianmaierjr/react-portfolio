@@ -7,7 +7,10 @@ const AppFooter = () => {
 	return (
 		<footer className={`${styles.footer} section`}>
 			<div>
-				<p>&copy; {new Date().getFullYear()} Brian Maier Jr.</p>
+				<p>
+					&copy; {new Date().getFullYear()} Brian Maier Jr.{" "}
+					<a href='/colophon'>Colophon</a>
+				</p>
 				<Tippy content='Whatever you do, work heartily, as for the Lord and not for men'>
 					<div className={styles.praiseGod}>Colossians 3:23</div>
 				</Tippy>
