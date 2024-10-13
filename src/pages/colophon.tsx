@@ -14,7 +14,7 @@ const Colophon = () => {
 						href='https://react.dev/'
 						target='_blankl'>
 						React.js
-						<ArrowUpRight />,
+						<ArrowUpRight />
 					</a>{" "}
 					by way of{" "}
 					<a
@@ -24,7 +24,7 @@ const Colophon = () => {
 						Vite
 						<ArrowUpRight />
 					</a>
-					. This site uses{" "}
+					. Fonts used are{" "}
 					<a
 						className='externalLink'
 						href='https://systemfontstack.com/'
@@ -32,8 +32,7 @@ const Colophon = () => {
 						system fonts
 						<ArrowUpRight />
 					</a>{" "}
-					for headings and body copy and was heavily inspired by many
-					sites on{" "}
+					and was heavily inspired by many sites on{" "}
 					<a
 						className='externalLink'
 						href='https://deadsimplesites.com/'
