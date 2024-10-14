@@ -2,6 +2,7 @@ import styles from "./index.module.css";
 import { GitHub, Dribbble, Send } from "react-feather";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import { NavLink } from "react-router-dom";
 
 const AppFooter = () => {
 	return (
@@ -9,7 +10,7 @@ const AppFooter = () => {
 			<div>
 				<p>
 					&copy; {new Date().getFullYear()} Brian Maier Jr.{" "}
-					<a href='/colophon'>Colophon</a>
+					<NavLink to='/colophon'>Colophon</NavLink>
 				</p>
 				<Tippy content='Whatever you do, work heartily, as for the Lord and not for men'>
 					<div className={styles.praiseGod}>Colossians 3:23</div>
