@@ -41,7 +41,6 @@ const Home = () => {
 					</li>
 					<li>Lifting Weights 5+ days a week</li>
 					<li>Practicing Guitar each day for a minimum of 1 hour</li>
-					<li>Reading the Bible every day</li>
 				</ul>
 			</Section>
 			<Section label='Projects'>
