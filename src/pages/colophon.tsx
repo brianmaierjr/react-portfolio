@@ -64,6 +64,14 @@ const Colophon = () => {
 						Netlify
 						<ArrowUpRight />
 					</a>
+					. GDPR-compliant analytics provided by{" "}
+					<a
+						className='externalLink'
+						href='https://clicky.com/'
+						target='_blank'>
+						Clicky
+						<ArrowUpRight />
+					</a>
 					.
 				</p>
 			</Section>
