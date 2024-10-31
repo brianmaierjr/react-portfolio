@@ -36,10 +36,9 @@ const AppHeader = ({ hideIntro }: HeaderProps) => {
 			<h2 className={styles.title}>Design Engineer</h2>
 			{!hideIntro && (
 				<p className={styles.intro}>
-					I'm a Design Engineer that has been empowering users through
-					simple experiences for the last 12 years. I enjoy bridging
-					the gap between Design &amp; Code with carefully crafted
-					Design Systems.
+					Empowering users through simple experiences for the last 12
+					years. I enjoy bridging the gap between Design &amp; Code
+					using carefully crafted design systems and components.
 				</p>
 			)}
 		</header>
