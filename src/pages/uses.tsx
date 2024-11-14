@@ -30,9 +30,9 @@ const Uses = () => {
 			<Section label='Hardware'>
 				<h3>Hardware</h3>
 				<ul className='list twoCol'>
-					<li>Apple 16" Macbook Pro M1</li>
+					<li>Apple 16" Macbook Pro M4</li>
 					<li>LG 32" 4k Montior</li>
-					<li>LG 27" Ultra HD Montior - Vertical</li>
+					<li>LG 27" Ultra HD Montior - Vertical</li> 
 					<li>MINDSKSTP Felt Desk Pad</li>
 					<li>MINDSKSTP Montior LIght Bar</li>
 					<li>Creative Pebble Pro Speakers</li>
