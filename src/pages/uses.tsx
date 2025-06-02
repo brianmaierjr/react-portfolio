@@ -32,14 +32,14 @@ const Uses = () => {
 				<ul className='list twoCol'>
 					<li>Apple 16" Macbook Pro M4</li>
 					<li>LG 32" 4k Montior</li>
-					<li>LG 27" Ultra HD Montior - Vertical</li> 
+					<li>LG 27" Ultra HD Montior - Vertical</li>
 					<li>MINDSKSTP Felt Desk Pad</li>
 					<li>MINDSKSTP Montior LIght Bar</li>
-					<li>Creative Pebble Pro Speakers</li>
+					<li>KRK ROKIT 5 G5 Studio Monitors</li>
 					<li>Logitech MX Master Mouse</li>
 					<li>Apple Magic Keyboard w/Touch ID</li>
 					<li>Apple Air Pods Pro</li>
-					<li>Apple Watch SE</li>
+					<li>Apple Watch SE 2nd Gen</li>
 					<li>Apple iPhone 13</li>
 				</ul>
 			</Section>

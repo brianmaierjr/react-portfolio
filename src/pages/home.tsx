@@ -28,22 +28,28 @@ const Home = () => {
 			<Section label='Now'>
 				<h2>Now</h2>
 				<ul className='list'>
-					<li>Building components in HubSpot using React ⚛️</li>
 					<li>
 						New side project to calculate curren draw on guitar
-						pedal power supplies 🎸
+						pedal power supplies ⚡️
 					</li>
 					<li>
 						Building out the Clover Learning Design System aka Bones
 						🦴
 					</li>
 					<li>
-						Converting Long Haul Jekyll Theme to Astro - Maybe? 🤷🏻‍♂️
+						Practicing guitar to play with{" "}
+						<a href='https://www.sowerproject.com/' target='_blank'>
+							Sower
+						</a>{" "}
+						at{" "}
+						<a
+							href='https://audiofeedfestival.com/'
+							target='_blank'>
+							Audiofeed Festival
+						</a>{" "}
+						🎸
 					</li>
-					<li>Lifting Weights 5+ days a week 💪🏻</li>
-					<li>
-						Practicing Guitar each day for a minimum of 1 hour 🎵
-					</li>
+					<li>Playing pickleball 3-5 days a week 🥒</li>
 				</ul>
 			</Section>
 			<Section label='Projects'>

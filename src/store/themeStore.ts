@@ -1,23 +1,20 @@
 import { create } from "zustand";
-import { persist, createJSONStorage, devtools } from "zustand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
 
-interface ThemeStateProps {
+type ThemeStore = {
 	isDarkMode: boolean;
 	toggleTheme: () => void;
-}
+};
 
-export const useThemeStore = create<ThemeStateProps>()(
-	devtools(
-		persist(
-			(set) => ({
-				isDarkMode: matchMedia("(prefers-color-scheme: dark)").matches,
-				toggleTheme: () =>
-					set((state) => ({ isDarkMode: !state.isDarkMode })),
-			}),
-			{
-				name: "themeStore",
-				storage: createJSONStorage(() => sessionStorage),
-			}
-		)
+export const useThemeStore = create<ThemeStore>()(
+	persist(
+		(set, get) => ({
+			isDarkMode: matchMedia("(prefers-color-scheme: dark)").matches,
+			toggleTheme: () => set(() => ({ isDarkMode: !get().isDarkMode })),
+		}),
+		{
+			name: "themeStore",
+			storage: createJSONStorage(() => sessionStorage),
+		}
 	)
 );
