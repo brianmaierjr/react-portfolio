@@ -41,6 +41,7 @@ const AppHeader = ({ hideIntro }: HeaderProps) => {
 					using carefully crafted design systems and components.
 				</p>
 			)}
+			<script async src="https://cdn.seline.com/seline.js" data-token="b7638928193e2b7"></script>
 		</header>
 	);
 };
