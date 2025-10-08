@@ -55,13 +55,14 @@ const Uses = () => {
 					<li>iTerm</li>
 					<li>Chrome Browser</li>
 					<li>Last Pass</li>
-					<li>Dropmark</li>
 					<li>Loom</li>
 					<li>Pocket</li>
 					<li>Slack</li>
 					<li>Feedly</li>
 					<li>Dropbox</li>
 					<li>GitHub</li>
+					<li>Copilot</li>
+					<li>Claude AI</li>
 					<li>Spotify</li>
 				</ul>
 			</Section>
