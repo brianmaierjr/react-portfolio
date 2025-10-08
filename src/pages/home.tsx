@@ -36,19 +36,8 @@ const Home = () => {
 						Building out the Clover Learning Design System aka Bones
 						🦴
 					</li>
-					<li>
-						Practicing guitar to play with{" "}
-						<a href='https://www.sowerproject.com/' target='_blank'>
-							Sower
-						</a>{" "}
-						at{" "}
-						<a
-							href='https://audiofeedfestival.com/'
-							target='_blank'>
-							Audiofeed Festival
-						</a>{" "}
-						🎸
-					</li>
+					<li>Getting up to date with <a href="https://nerdy.dev/cascading-secret-sauce" target="_blank">all the css things</a></li>
+					<li>Accessibility Remediation for Tacoria</li>
 					<li>Playing pickleball 3-5 days a week 🥒</li>
 				</ul>
 			</Section>
