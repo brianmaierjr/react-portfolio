@@ -1,29 +1,29 @@
-import { useEffect } from "react";
-import { useThemeStore } from "../../store/themeStore";
-import "./color-mode-toggle.css";
-import { Sun, Moon } from "react-feather";
+import { useEffect } from 'react'
+import { useThemeStore } from '../../store/themeStore'
+import './color-mode-toggle.css'
+import { Sun, Moon } from 'react-feather'
 
 const DarkMode = () => {
-	const { isDarkMode, toggleTheme } = useThemeStore();
+  const { isDarkMode, toggleTheme } = useThemeStore()
 
-	useEffect(() => {
-		document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
-	}, [isDarkMode, toggleTheme]);
+  useEffect(() => {
+    document.body.setAttribute('data-theme', isDarkMode ? 'dark' : 'light')
+  }, [isDarkMode])
 
-	return (
-		<div className='dark_mode'>
-			<input
-				className='dark_mode_input'
-				type='checkbox'
-				id='darkmode-toggle'
-				onChange={toggleTheme}
-				defaultChecked={isDarkMode}
-			/>
-			<label className='dark_mode_label' htmlFor='darkmode-toggle'>
-				{isDarkMode ? <Sun /> : <Moon />}
-			</label>
-		</div>
-	);
-};
+  return (
+    <div className="dark_mode">
+      <input
+        className="dark_mode_input"
+        type="checkbox"
+        id="darkmode-toggle"
+        onChange={toggleTheme}
+        checked={isDarkMode}
+      />
+      <label className="dark_mode_label" htmlFor="darkmode-toggle">
+        {isDarkMode ? <Sun /> : <Moon />}
+      </label>
+    </div>
+  )
+}
 
-export default DarkMode;
+export default DarkMode
