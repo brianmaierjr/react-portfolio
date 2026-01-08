@@ -53,7 +53,7 @@ const AppFooter = () => {
           </li>
         </ul>
       </nav>
-      <a className="h-card sr-only" href="https://brianmaierjr.com/">
+      <a className="h-card sr-only" rel="me" href="https://brianmaierjr.com/">
         Brian Maier Jr.
       </a>
     </footer>
