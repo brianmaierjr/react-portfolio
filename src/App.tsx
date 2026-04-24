@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { AnimatedRoutes } from './components/animated-routes'
+import About from './pages/about'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/uses" element={<Uses />} />
       <Route path="/colophon" element={<Colophon />} />
+      <Route path="/about" element={<About />} />
     </Route>
   )
 )

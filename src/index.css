@@ -21,12 +21,14 @@
   --text-color-shadier: var(--black-50);
   --text-color-shadiest: var(--black-30);
   --text-color-slim-shady: var(--black-5);
-  --link-color: mediumseagreen;w a
+  --link-color: mediumseagreen;
 
-  --font-serif: 'Iowan Old Style', Apple Garamond, Baskerville, Times New Roman,
+  --font-serif:
+    'Iowan Old Style', Apple Garamond, Baskerville, Times New Roman,
     Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol;
-  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
 
